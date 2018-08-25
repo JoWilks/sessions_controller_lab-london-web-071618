@@ -13,10 +13,10 @@ def create
 end
 
 def destroy
-  if !session[:name].empty?
+  if !session[:name].empty? 
     session.delete :username
     redirect_to login_path
-  elsif 
+  elsif session[:name] == nil
     redirect_to login_path
   end
 end
