@@ -14,7 +14,6 @@ end
 
 def destroy
   if session[:name] == nil 
-    session.delete :username
     redirect_to login_path
   elsif !session[:name].empty? 
     session.delete :username
