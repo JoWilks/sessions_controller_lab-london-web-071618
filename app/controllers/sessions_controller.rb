@@ -13,7 +13,9 @@ def create
 end
 
 def destroy
-  session.delete :username
+  if session[:name] != nil
+    session.delete :username
+  end
 end
 
 end
