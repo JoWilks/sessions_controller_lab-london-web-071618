@@ -8,6 +8,7 @@ def create
   if session[:name] == nil
     redirect_to '/'
   else 
+    redirect_to '/'
   end
 end
 
