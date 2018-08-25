@@ -6,7 +6,7 @@ end
 def create
   session[:name] = params[:name]
   if session[:name] == nil
-    render :new
+    redirect_to new_sessions_path
   else 
     redirect_to '/'
   end
